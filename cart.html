@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts\fonts.css">
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- Header start -->
+    <header class="header">
+        <h1>Bouncer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home </a></li>
+                <li id="dd">
+                    <a href="#" id="dropdownTrigger">Store</a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>
+                                <h1>Category</h1>
+                            </li>
+                            <li><a href=""> AirPort & Wireless</a></li>
+                            <li><a href=""> AppleCare</a></li>
+                            <li><a href=""> Bags, Shells & Sleeves</a></li>
+                            <li><a href=""> Business & Security</a></li>
+                            <li><a href=""> Cables & Docks</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h1></h1>
+                            </li>
+                            <li><a href=""> Cameras & Video</a></li>
+                            <li><a href=""> Car & Travel</a></li>
+                            <li><a href=""> Cases & Films</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h1>Category</h1>
+                            </li>
+                            <li><a href=""> Charging Devices</a></li>
+                            <li><a href=""> Connected Home</a></li>
+                            <li><a href=""> Device Care</a></li>
+                            <li><a href=""> Display & Graphic</a></li>
+                            <li><a href=""> Fitness & Sport</a></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h1></h1>
+                            </li>
+                            <li><a href=""> Headphones</a></li>
+                            <li><a href=""> HealhKit</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <h1>Category</h1>
+                            </li>
+                            <li><a href=""> Mice & Keyboards</a></li>
+                            <li><a href=""> Music Creation</a></li>
+                            <li><a href=""> Networking & Server</a></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Iphone </a></li>
+                <li><a href="#">Ipad </a></li>
+                <li><a href="#">Macbook </a></li>
+                <li><a href="#">Accessories </a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Header end -->
+
+    <div class="breadcrumbMain">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li>Beat Solo2 on Ear Headphones - Black</li>
+        </ul>
+    </div>
+
+
+    <!-- cart start from here -->
+    <section class="cart">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th style="width: 10% ;"></th>
+                    <th style="width: 60% ;">Product</th>
+                    <th style="width: 10% ;">Price</th>
+                    <th style="width: 10% ;">QTY</th>
+                    <th style="width: 10% ;">Unit Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>x</th>
+                    <td>
+                        <img src="images/c04297141.png" alt="">
+                        <p>Philips Hue 7W BR30 Connected Downlight Lamp</p>
+                    </td>
+                    <td>
+                        <p>$998</p>
+                    </td>
+                    <td>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number" value="1" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <p>$998</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>x</th>
+                    <td>
+                        <img src="images/laptop.png" alt="">
+                        <p>Apple Macbook Pro/p>
+                    </td>
+                    <td>
+                        <p>$998</p>
+                    </td>
+                    <td>
+                        <form>
+                            <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">-
+                            </div>
+                            <input type="number" id="number" value="1" />
+                            <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">+
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <p>$998</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <div class="vouch">
+            <input type="text" placeholder="Voucher Code">
+            <button>Redeem</button>
+        </div>
+
+        <div class="SubTTL">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>$998</td>
+                </tr>
+                <tr>
+                    <td>Shipping fee</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>Coupon</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <th>TOTAL</th>
+                    <th>$118</th>
+                </tr>
+            </table>
+            <button>Check Out</button>
+        </div>
+    </section>
+    <!-- cart end here -->
+
+
+    <!-- Footer start here -->
+    <footer class="footer">
+        <div class="footerInner">
+            <div class="grid">
+                <div class="gridItem">
+                    <div class="innerGrid">
+                        <h1>Bouncer</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+                    </div>
+                    <div class="innerGrid">
+                        <h3>Follow US</h3>
+                        <p>Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                    </div>
+                    <div class="innerGrid">
+                        <h3>Contact Us</h3>
+                        <p>My Company , 4578 Marmora Road, Glasgow D04 89GR Call us now: 0123-456-789 Email:
+                            support@whatever.com</p>
+                    </div>
+                </div>
+                <div class="gridItem2">
+                    <div class="innerGrid2">
+                        <h3>Informaton</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Information</a></li>
+                            <li><a href="">Privicy Policy</a></li>
+                            <li><a href="">Term & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="innerGrid2">
+                        <h3>Services</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Information</a></li>
+                            <li><a href="">Privicy Policy</a></li>
+                            <li><a href="">Term & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="innerGrid2">
+                        <h3>Extra</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Information</a></li>
+                            <li><a href="">Privicy Policy</a></li>
+                            <li><a href="">Term & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="innerGrid2">
+                        <h3>My Accounts</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Information</a></li>
+                            <li><a href="">Privicy Policy</a></li>
+                            <li><a href="">Term & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="innerGrid2">
+                        <h3>Usefull Links</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Information</a></li>
+                            <li><a href="">Privicy Policy</a></li>
+                            <li><a href="">Term & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="innerGrid2">
+                        <h3>Our Offices</h3>
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Information</a></li>
+                            <li><a href="">Privicy Policy</a></li>
+                            <li><a href="">Term & Condition</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end here -->
+    <script src="js/itemDetail.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+
+</html>

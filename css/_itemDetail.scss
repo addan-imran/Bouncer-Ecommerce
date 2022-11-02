@@ -1,0 +1,325 @@
+.itemDetail {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    .item {
+        width: 70%;
+        display: grid;
+        grid-template-columns: 30% auto;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+        .card-wrapper{
+            margin-top: 50px;
+            padding: 0px 10px;
+            .product-imgs{
+                .img-display{
+                    overflow: hidden;
+                    .img-showcase{
+                        display: flex;
+                        width: 100%;
+                        transition: all 0.5s ease;
+                        img{
+                            min-width: 100%;
+                        }
+                    }
+                }
+                .img-select{
+                    display: flex;
+                    .img-item{
+                        margin: 0.3rem;
+                        &:nth-child(1),
+                        &:nth-child(2),
+                        &:nth-child(3){
+                            margin-right: 0;
+                        }
+                        &:hover{
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .productDetail {
+            h1 {
+                font-size: 24px;
+                font-family: $nova-semibold;
+            }
+
+            .star {
+                float: left;
+                margin-top: 30px;
+                color: #c1c8ce;
+
+                .checked {
+                    color: orange;
+                }
+            }
+
+            p {
+                float: left;
+                margin-left: 20px;
+                margin-top: 30px;
+                font-family: $nova-semibold;
+            }
+
+            h6 {
+                a {
+                    float: left;
+                    font-size: 14px;
+                    color: $primary-color;
+                    margin-left: 15px;
+                    margin-top: 30px;
+                    font-family: $nova-semibold;
+                    text-decoration: none;
+                }
+            }
+
+            h2 {
+                margin-top: 20px;
+                font-size: 24px;
+                font-family: $nova;
+                color: $secondry-color;
+
+                del {
+                    font-size: 20px;
+                    color: lightgray;
+                }
+            }
+
+            table {
+                margin-top: 20px;
+                width: 60%;
+                line-height: 2.5;
+                text-align: left;
+            }
+
+            .storage {
+                tr {
+                    td {
+                        border: 2px solid gray;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .I_D_C_W {
+
+                margin-top: 50px;
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: space-between;
+
+                form {
+                    width: 200%;
+
+                    .value-button {
+                        display: inline-block;
+                        margin: 0px;
+                        width: 40px;
+                        height: 20px;
+                        text-align: center;
+                        vertical-align: middle;
+                        padding: 11px 0;
+                        user-select: none;
+                        color: $primary-color;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    #decrease {
+                        margin-right: -4px;
+                        background-color: #f6f7f8;
+                    }
+
+                    #increase {
+                        margin-left: -4px;
+                        background-color: #f6f7f8;
+                    }
+
+                    #input-wrap {
+                        margin: 0px;
+                        padding: 0px;
+                    }
+
+                    input {
+                        width: 40px;
+                        text-align: center;
+                        height: 40px;
+                        border: none;
+                        background-color: #f6f7f8;
+
+                        #number {
+                            text-align: center;
+                            border: none;
+                            border-top: 1px solid #ddd;
+                            border-bottom: 1px solid #ddd;
+                            margin: 0px;
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+
+                a {
+                    text-decoration: none;
+                    align-self: center;
+                    padding: 10px;
+                    color: $primary-color;
+                    background-color: #eaf5ff;
+                    border-radius: 2px;
+
+                    svg {
+                        height: 20px;
+                        margin-right: 20px;
+                        fill: $primary-color;
+                    }
+                }
+            }
+
+            .socialBtn {
+                display: flex;
+                flex-direction: row;
+                justify-content: end;
+                margin-top: 50px;
+
+                button {
+                    position: relative;
+                    margin-left: 20px;
+                    border: none;
+                    color: white;
+                    height: 46px;
+                    width: 230px;
+                    border-radius: 4px;
+
+                    svg {
+                        position: absolute;
+                        width: 6%;
+                        left: 25px;
+                        top: 10px;
+                        fill: white;
+                    }
+                    .twitter{
+                        width: 10%;
+                    }
+                }
+            }
+        }
+
+        .tabs {
+            margin-top: 50px;
+            grid-column: 1 / span 2;
+
+            .tabBtn {
+                overflow: hidden;
+                border-bottom: 1px solid lightgray;
+
+                button {
+                    font-family: $nova-semibold;
+                    font-size: 14px;
+                    background-color: inherit;
+                    float: left;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                    padding: 14px 16px;
+                    transition: 0.3s;
+                    font-size: 17px;
+
+                    &:hover {
+                        background-color: #ddd;
+                    }
+                }
+
+                .active {
+                    color: $primary-color;
+                    border-bottom: 5px solid $primary-color;
+                }
+            }
+
+            .tabcontent {
+                font-family: $nova;
+                font-size: 14px;
+                display: none;
+                padding: 6px 12px;
+                border-top: none;
+                line-height: 2;
+            }
+        }
+    }
+
+    .itemBestSeller {
+        width: 30%;
+
+        h2 {
+            color: lightgray;
+            font-size: 18px;
+            font-family: $nova-semibold;
+        }
+
+        .bestSeler {
+            margin-top: 0px;
+
+            .sellerGrid {
+                margin: 0px;
+            }
+        }
+
+        .goPro {
+            .sellerGrid {
+                .sellerGridItem {
+                    text-align: left;
+                    background-color: #c1c8ce;
+
+                    h3 {
+                        font-size: 24px;
+                        // text-align: left;
+                        font-family: $nova-semibold;
+                        margin-top: 20px;
+                        margin-left: 20px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        font-family: $nova;
+                        margin-top: 20px;
+                        margin-left: 20px;
+                    }
+
+                    h4 {
+                        font-size: 24px;
+                        font-family: $nova;
+                        color: #22262A;
+                        margin-top: 20px;
+                        margin-left: 20px;
+                        opacity: 75%;
+                    }
+
+                    img {
+                        width: 90%;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+.bestSeler {
+    margin-top: 100px;
+}

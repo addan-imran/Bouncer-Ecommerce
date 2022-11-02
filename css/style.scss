@@ -1,0 +1,12 @@
+@import "variable";
+@import "header";
+@import "loadMore";
+@import "itemDetail";
+@import "cart";
+@import "mediaQury";
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}

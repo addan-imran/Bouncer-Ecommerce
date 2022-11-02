@@ -1,0 +1,138 @@
+.cart {
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+
+    .table {
+        width: 100%;
+        margin: auto;
+        border-spacing: 0px 50px;
+
+        tr {
+            th {
+                text-align: left;
+                height: 100px;
+            }
+
+            td {
+                text-align: left;
+
+                form {
+                    .value-button {
+                        display: inline-block;
+                        margin: 0px;
+                        width: 40px;
+                        height: 20px;
+                        text-align: center;
+                        vertical-align: middle;
+                        padding: 11px 0;
+                        user-select: none;
+                        color: $primary-color;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+
+                    #decrease {
+                        margin-right: -4px;
+                        background-color: #f6f7f8;
+                    }
+
+                    #increase {
+                        margin-left: -4px;
+                        background-color: #f6f7f8;
+                    }
+
+                    #input-wrap {
+                        margin: 0px;
+                        padding: 0px;
+                    }
+
+                    input {
+                        width: 40px;
+                        text-align: center;
+                        height: 40px;
+                        border: none;
+                        background-color: #f6f7f8;
+
+                        #number {
+                            text-align: center;
+                            border: none;
+                            border-top: 1px solid #ddd;
+                            border-bottom: 1px solid #ddd;
+                            margin: 0px;
+                            width: 40px;
+                            height: 40px;
+                        }
+
+                        &:focus {
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                }
+
+                img {
+                    width: 20%;
+                    float: left;
+                }
+
+                p {
+                    float: left;
+                    vertical-align: bottom;
+                }
+
+            }
+
+        }
+    }
+
+    .SubTTL {
+        width: 25%;
+        margin-left: auto;
+        margin-right: 0;
+        margin-bottom: 50px;
+
+        table {
+            width: 100%;
+            line-height: 3.5;
+
+            th {
+                text-align: left;
+                font-size: 25px;
+            }
+        }
+
+        button {
+            width: 300px;
+            height: 60px;
+            border: none;
+            background-color: $primary-color;
+            color: white;
+            border-radius: 4px;
+        }
+    }
+
+    .vouch {
+        float: left;
+        margin-top: 50px;
+        width: 70%;
+        input {
+            width: 369px;
+            padding: 18px;
+            &:focus{
+                outline: none;
+            }
+        }
+        button{
+            
+        border: none;
+            width: 118px;
+            padding: 20px;
+            margin-left: -10px;
+            color: white;
+            background-color: $primary-color;
+        }
+    }
+}
