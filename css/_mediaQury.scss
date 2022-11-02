@@ -115,17 +115,31 @@
         }
 
         // Item detail
-        .itemDetail{ 
-            width: 100%;
+        .itemDetail{
             .item{
                 width: 80%;
                 grid-template-columns: 30% 70%;
                 .productDetail{
-                    margin-right: 10px;
+                    margin-left: 50px;
+                    .I_D_C_W{
+                        form{
+                            width: auto;
+                            .value-button{
+                                width: 15px;
+                                height: 15px;
+                            }
+                        }
+                    }
                 }
             }
             .itemBestSeller{
-                width: 20%;
+                width: auto;
+                .bestSeler{
+                    // .sellerGridItem{
+                    //     width: 130px;
+                    //     height: auto;
+                    // }
+                }
             }
         }
     }
@@ -553,7 +567,7 @@
                             width: auto;
                         }
                         a{
-                            
+
                             width: 125px;
                             font-size: 10px;
                             svg{
