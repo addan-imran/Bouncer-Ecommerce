@@ -304,6 +304,9 @@
                     }
                     .I_D_C_W{
                         grid-template-columns: 40% 25% 30%;
+                        form{
+                            width: auto;
+                        }
                     }
                 }
                 .tabs{
@@ -523,6 +526,61 @@
 
                     }
                 }
+            }
+        }
+        // Item detail
+        .itemDetail{
+            width: 100%;
+            .item{
+                width: 100%;
+                grid-template-columns: auto;
+                .card-wrapper{
+                    margin: 0px;
+                    padding: 0px;
+                }
+                .productDetail{
+                    overflow: hidden;
+                    margin-left: 30px;
+                    h1{
+                        margin-top: 30px;
+                        font-size: 20px;
+                    }
+                    .I_D_C_W{
+                        
+                        row-gap: 15px;
+                        form{
+                            grid-column: 1/4;
+                            width: auto;
+                        }
+                        a{
+                            
+                            width: 125px;
+                            font-size: 10px;
+                            svg{
+                                height: 11px;
+                                margin-right: 20px;
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                    .socialBtn{
+                        justify-content: center;
+                        button{
+                            height: 35px;
+                            width: 125px;
+                            font-size: 10px;
+                            svg{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                .tabs{
+                    grid-column: auto;
+                }
+            }
+            .itemBestSeller{
+                display: none;
             }
         }
     }

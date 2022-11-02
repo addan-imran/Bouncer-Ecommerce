@@ -1352,6 +1352,9 @@
   .itemDetail .item .productDetail .I_D_C_W {
     grid-template-columns: 40% 25% 30%;
   }
+  .itemDetail .item .productDetail .I_D_C_W form {
+    width: auto;
+  }
   .itemDetail .item .tabs {
     grid-column: auto;
   }
@@ -1496,6 +1499,58 @@
   .loadMore .loadMoreInner .loadRight .bestSeler .sellerGrid .sellerGridItem {
     width: 230px;
     height: auto;
+  }
+  .itemDetail {
+    width: 100%;
+  }
+  .itemDetail .item {
+    width: 100%;
+    grid-template-columns: auto;
+  }
+  .itemDetail .item .card-wrapper {
+    margin: 0px;
+    padding: 0px;
+  }
+  .itemDetail .item .productDetail {
+    overflow: hidden;
+    margin-left: 30px;
+  }
+  .itemDetail .item .productDetail h1 {
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  .itemDetail .item .productDetail .I_D_C_W {
+    row-gap: 15px;
+  }
+  .itemDetail .item .productDetail .I_D_C_W form {
+    grid-column: 1/4;
+    width: auto;
+  }
+  .itemDetail .item .productDetail .I_D_C_W a {
+    width: 125px;
+    font-size: 10px;
+  }
+  .itemDetail .item .productDetail .I_D_C_W a svg {
+    height: 11px;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .itemDetail .item .productDetail .socialBtn {
+    justify-content: center;
+  }
+  .itemDetail .item .productDetail .socialBtn button {
+    height: 35px;
+    width: 125px;
+    font-size: 10px;
+  }
+  .itemDetail .item .productDetail .socialBtn button svg {
+    display: none;
+  }
+  .itemDetail .item .tabs {
+    grid-column: auto;
+  }
+  .itemDetail .itemBestSeller {
+    display: none;
   }
 }
 @media (min-width: 375px) and (max-width: 424px) {
