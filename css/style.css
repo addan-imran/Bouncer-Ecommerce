@@ -40,10 +40,19 @@
   display: flex;
   justify-content: space-around;
 }
+.header nav ul li {
+  position: relative;
+}
 .header nav ul li a {
   text-decoration: none;
   font-size: 16px;
   color: #22262A;
+}
+.header nav ul li svg {
+  position: absolute;
+  top: -50px;
+  right: -200px;
+  width: 30px;
 }
 .header nav ul #dd {
   position: relative;
@@ -76,9 +85,7 @@
 }
 
 .main {
-  position: relative;
   width: 100%;
-  height: 500px;
   overflow: hidden;
   background-image: linear-gradient(63deg, hsl(355deg, 100%, 64%) 0%, hsl(256deg, 100%, 70%) 100%);
 }
@@ -93,7 +100,7 @@
   flex-direction: row;
 }
 .main .images-slideshow .imageSlides .imgTxt {
-  margin-top: 100PX;
+  margin-top: 50px;
   width: 45%;
   color: white;
 }
@@ -115,12 +122,13 @@
 }
 .main .images-slideshow .imageSlides img {
   width: 100%;
+  margin-left: auto;
+  margin-right: 0px;
 }
 .main .previous {
   position: absolute;
   top: 45%;
   left: -4%;
-  width: 500px;
   cursor: pointer;
 }
 .main .next {
@@ -140,13 +148,12 @@
   flex-flow: row wrap;
 }
 .featuredItems .box {
-  height: 300px;
-  width: 400px;
+  height: 250px;
+  width: 350px;
   overflow: hidden;
 }
 .featuredItems .box .boxText {
   margin: 50px;
-  width: 60%;
   color: white;
 }
 .featuredItems .box .boxText h1 {
@@ -155,6 +162,7 @@
 }
 .featuredItems .box .boxText p {
   margin-top: 10px;
+  font-size: 12px;
   line-height: 2;
   font-family: "Proxima Nova";
 }
@@ -165,13 +173,18 @@
   font-family: "Proxima Nova";
 }
 .featuredItems #ip6 {
-  background-image: url(../images/pic.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 80px 10px;
+  position: relative;
 }
-.featuredItems #ip6:hover {
-  background-size: 105%;
+.featuredItems #ip6 img {
+  position: absolute;
+  bottom: -80px;
+  right: -50px;
+  display: block;
+  width: 80%;
+}
+.featuredItems #ip6 img:hover {
+  transform: scale(1.5);
+  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 .featuredItems #oR img {
@@ -198,12 +211,12 @@
 }
 .featuredItems #gP6 .gP6Txt {
   margin-top: 50px;
-  width: 45%;
+  width: 50%;
   float: left;
 }
 .featuredItems #gP6 .gP6Txt h1 {
   font-family: "proxima_nova_altbold";
-  font-size: 24px;
+  font-size: 20px;
   float: left;
   margin-left: 30px;
 }
@@ -211,7 +224,7 @@
   font-family: "Proxima Nova";
   margin: 10px 0px 0px 30px;
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 10px;
   float: right;
 }
 .featuredItems #gP6 .gP6Txt h2 {
@@ -222,7 +235,7 @@
   font-family: "Proxima Nova";
 }
 .featuredItems #gP6 .gP6Img {
-  width: 55%;
+  width: 50%;
   float: right;
   margin-top: 100px;
 }
@@ -261,14 +274,13 @@
   margin-top: 50px;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 .bestSeler .sellerGrid .sellerGridItem {
   position: relative;
   border: 3px solid #f6f7f8;
-  margin: 27px;
-  width: 270px;
-  height: 349px;
+  margin-top: 50px;
+  width: 260px;
   text-align: center;
   overflow: hidden;
 }
@@ -281,28 +293,26 @@
 .bestSeler .sellerGrid .sellerGridItem:hover .ovrlay {
   opacity: 0.8;
   transition: all 0.2 s ease-in-out;
-  display: flex;
-  flex-direction: row;
-}
-.bestSeler .sellerGrid .sellerGridItem:hover .ovrlay .hrt {
-  width: 50%;
-  margin-left: 30%;
-  fill: #2E90E5;
-  width: 15%;
-}
-.bestSeler .sellerGrid .sellerGridItem:hover .ovrlay .crt {
-  width: 50%;
-  margin-right: 30%;
-  fill: #2E90E5;
-  width: 15%;
 }
 .bestSeler .sellerGrid .sellerGridItem .ovrlay {
   position: absolute;
   opacity: 0;
   top: 0%;
   width: 100%;
-  height: 60%;
   background-color: white;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  align-content: center;
+  height: 200px;
+}
+.bestSeler .sellerGrid .sellerGridItem .ovrlay .hrt {
+  fill: #2E90E5;
+  width: 30%;
+}
+.bestSeler .sellerGrid .sellerGridItem .ovrlay .crt {
+  fill: #2E90E5;
+  width: 30%;
 }
 .bestSeler .sellerGrid .sellerGridItem h3 {
   font-size: 14px;
@@ -328,7 +338,7 @@
   font-weight: 100;
 }
 .bestSeler .sellerBtn {
-  margin-top: 20px;
+  margin-top: 50px;
   text-align: center;
 }
 .bestSeler .sellerBtn a {
@@ -801,7 +811,8 @@
 .itemDetail .item {
   width: 70%;
   display: grid;
-  grid-template-columns: 30% auto;
+  grid-template-columns: 35% 60%;
+  justify-content: space-between;
 }
 .itemDetail .item img {
   width: 100%;
@@ -809,7 +820,6 @@
 }
 .itemDetail .item .card-wrapper {
   margin-top: 50px;
-  padding: 0px 10px;
 }
 .itemDetail .item .card-wrapper .product-imgs .img-display {
   overflow: hidden;
@@ -873,13 +883,23 @@
 }
 .itemDetail .item .productDetail table {
   margin-top: 20px;
-  width: 60%;
   line-height: 2.5;
   text-align: left;
+}
+.itemDetail .item .productDetail table tr {
+  font-size: 14px;
+}
+.itemDetail .item .productDetail table tr th {
+  font-family: "proxima_nova_ltsemibold";
+  width: 40%;
+}
+.itemDetail .item .productDetail table tr td {
+  font-family: "Proxima Nova";
 }
 .itemDetail .item .productDetail .storage tr td {
   border: 2px solid gray;
   text-align: center;
+  width: 50px;
 }
 .itemDetail .item .productDetail .I_D_C_W {
   margin-top: 50px;
@@ -1024,7 +1044,8 @@
   margin-top: 0px;
 }
 .itemDetail .itemBestSeller .bestSeler .sellerGrid {
-  margin: 0px;
+  width: 100%;
+  grid-template-columns: auto;
 }
 .itemDetail .itemBestSeller .goPro .sellerGrid .sellerGridItem {
   text-align: left;
@@ -1176,14 +1197,38 @@
   background-color: #2E90E5;
 }
 
-@media (min-width: 1024px) and (max-width: 1600px) {
+@media (min-width: 1440px) {
+  .sellerGridItem {
+    width: 300px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .main .images-slideshow {
+    width: 80%;
+  }
+  .main .images-slideshow .imageSlides .imgTxt {
+    width: 70%;
+  }
+  .main .images-slideshow .imageSlides .imgTxt h1 {
+    font-size: 30px;
+  }
+  .main .images-slideshow .imageSlides .imgTxt p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .main .images-slideshow .imageSlides img {
+    position: relative;
+    right: -50px;
+  }
   .bestSeler .sellerGrid {
-    width: 100%;
+    width: 80%;
     grid-template-columns: auto auto auto auto;
   }
   .bestSeler .sellerGrid .sellerGridItem {
-    width: 200px;
-    height: 260px;
+    width: 100%;
+  }
+  .bestSeler .sellerGrid .sellerGridItem .ovrlay {
+    height: 125px;
   }
   .sRS .sRSInner {
     width: 100%;

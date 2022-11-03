@@ -8,7 +8,8 @@
     .item {
         width: 70%;
         display: grid;
-        grid-template-columns: 30% auto;
+        grid-template-columns: 35% 60%;
+        justify-content: space-between;
 
         img{
             width: 100%;
@@ -16,7 +17,6 @@
         }
         .card-wrapper{
             margin-top: 50px;
-            padding: 0px 10px;
             .product-imgs{
                 .img-display{
                     overflow: hidden;
@@ -96,9 +96,18 @@
 
             table {
                 margin-top: 20px;
-                width: 60%;
                 line-height: 2.5;
                 text-align: left;
+                tr{
+                    font-size: 14px;
+                    th{
+                        font-family: $nova-semibold;
+                        width: 40%;
+                    }
+                    td{
+                        font-family: $nova;
+                    }
+                }
             }
 
             .storage {
@@ -106,6 +115,7 @@
                     td {
                         border: 2px solid gray;
                         text-align: center;
+                        width: 50px;
                     }
                 }
             }
@@ -275,7 +285,8 @@
             margin-top: 0px;
 
             .sellerGrid {
-                margin: 0px;
+                width: 100%;
+                grid-template-columns: auto;
             }
         }
 
