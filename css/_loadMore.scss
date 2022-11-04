@@ -172,7 +172,7 @@
             .sellerGridItem {
                 position: relative;
                 border: 3px solid #f6f7f8;
-                margin: 27px;
+                
 
                 a {
                     color: black;
@@ -184,17 +184,16 @@
                     }
 
                     h3 {
-                        float: left;
-                        margin-top: 20px;
-                        margin-left: 40px;
+                        position: absolute;
+                        top: 20px;
+                        left: 270px;
                     }
                 }
 
                 .star {
-                    float: left;
-                    position: relative;
-                    top: 50px;
-                    left: -160px;
+                    position: absolute;
+                    top: 60px;
+                    left: 270px;
                     color: #C1C8CE;
 
                     .checked {
@@ -203,10 +202,9 @@
                 }
 
                 h5 {
-                    float: left;
-                    position: relative;
-                    right: -400px;
-                    top: 45px;
+                    position: absolute;
+                    top: 40px;
+                    right: 50px;
                     color: #FF6875;
                     font-size: 25px;
                     font-family: "Proxima Nova";
@@ -219,9 +217,9 @@
                 }
 
                 p {
-                    position: relative;
-                    top: 60px;
-                    left: 40px;
+                    position: absolute;
+                    top: 100px;
+                    left: 270px;
                     width: 60%;
                     float: left;
                 }

@@ -1,9 +1,5 @@
     // header 
-    @media (min-width: 1440px){
-        .sellerGridItem {
-            width: 300px;
-        }
-    }
+
     @media (min-width: 1024px) and (max-width: 1439px) {
         .main{
             .images-slideshow{
@@ -36,6 +32,25 @@
                     width: 100%;
                     .ovrlay{
                         height: 125px;
+                    }
+                }
+            }
+        }
+
+        .itemDetail{
+            .itemBestSeller{
+                .bestSeler{
+                    
+                }
+                .goPro{
+                    .sellerGrid{
+                        width: 80%;
+                        .sellerGridItem{
+                            border: none;
+                            p{
+                                margin: 20px;
+                            }
+                        }
                     }
                 }
             }
@@ -151,11 +166,35 @@
                 .productDetail{
                     margin-left: 50px;
                     .I_D_C_W{
+                        display: block;
                         form{
+                            text-align: right;
+                            margin: 30px 30px 30px 0px;
+
                             width: auto;
                             .value-button{
                                 width: 15px;
                                 height: 15px;
+                            }
+                        }
+                        a{
+                            position: relative;
+                            font-size: 12px;
+                            padding: 10px 30px;
+                            svg{
+                                position: absolute;
+                                left: 10px;
+                                top: 10px;
+                                height: 12px;
+                            }
+                        }
+                    }
+                    .socialBtn{
+                        button{
+                            padding: 10px 20px;
+                            font-size: 10px;
+                            svg{
+                                display: none;
                             }
                         }
                     }
@@ -163,12 +202,7 @@
             }
             .itemBestSeller{
                 width: auto;
-                .bestSeler{
-                    // .sellerGridItem{
-                    //     width: 130px;
-                    //     height: auto;
-                    // }
-                }
+
             }
         }
     }

@@ -730,7 +730,6 @@
 .loadMore .bestSeler .sellerList .sellerGridItem {
   position: relative;
   border: 3px solid #f6f7f8;
-  margin: 27px;
 }
 .loadMore .bestSeler .sellerList .sellerGridItem a {
   color: black;
@@ -741,25 +740,23 @@
   float: left;
 }
 .loadMore .bestSeler .sellerList .sellerGridItem a h3 {
-  float: left;
-  margin-top: 20px;
-  margin-left: 40px;
+  position: absolute;
+  top: 20px;
+  left: 270px;
 }
 .loadMore .bestSeler .sellerList .sellerGridItem .star {
-  float: left;
-  position: relative;
-  top: 50px;
-  left: -160px;
+  position: absolute;
+  top: 60px;
+  left: 270px;
   color: #C1C8CE;
 }
 .loadMore .bestSeler .sellerList .sellerGridItem .star .checked {
   color: orange;
 }
 .loadMore .bestSeler .sellerList .sellerGridItem h5 {
-  float: left;
-  position: relative;
-  right: -400px;
-  top: 45px;
+  position: absolute;
+  top: 40px;
+  right: 50px;
   color: #FF6875;
   font-size: 25px;
   font-family: "Proxima Nova";
@@ -770,9 +767,9 @@
   font-weight: 100;
 }
 .loadMore .bestSeler .sellerList .sellerGridItem p {
-  position: relative;
-  top: 60px;
-  left: 40px;
+  position: absolute;
+  top: 100px;
+  left: 270px;
   width: 60%;
   float: left;
 }
@@ -973,29 +970,25 @@
   fill: #2E90E5;
 }
 .itemDetail .item .productDetail .socialBtn {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
   margin-top: 50px;
 }
 .itemDetail .item .productDetail .socialBtn button {
   position: relative;
-  margin-left: 20px;
   border: none;
   color: white;
-  height: 46px;
-  width: 230px;
   border-radius: 4px;
+  padding: 15px 30px;
 }
 .itemDetail .item .productDetail .socialBtn button svg {
   position: absolute;
   width: 6%;
-  left: 25px;
-  top: 10px;
+  left: 15px;
+  top: 12px;
   fill: white;
 }
 .itemDetail .item .productDetail .socialBtn button .twitter {
-  width: 10%;
+  width: 7%;
+  top: 15px;
 }
 .itemDetail .item .tabs {
   margin-top: 50px;
@@ -1197,11 +1190,6 @@
   background-color: #2E90E5;
 }
 
-@media (min-width: 1440px) {
-  .sellerGridItem {
-    width: 300px;
-  }
-}
 @media (min-width: 1024px) and (max-width: 1439px) {
   .main .images-slideshow {
     width: 80%;
@@ -1229,6 +1217,15 @@
   }
   .bestSeler .sellerGrid .sellerGridItem .ovrlay {
     height: 125px;
+  }
+  .itemDetail .itemBestSeller .goPro .sellerGrid {
+    width: 80%;
+  }
+  .itemDetail .itemBestSeller .goPro .sellerGrid .sellerGridItem {
+    border: none;
+  }
+  .itemDetail .itemBestSeller .goPro .sellerGrid .sellerGridItem p {
+    margin: 20px;
   }
   .sRS .sRSInner {
     width: 100%;
@@ -1285,12 +1282,35 @@
   .itemDetail .item .productDetail {
     margin-left: 50px;
   }
+  .itemDetail .item .productDetail .I_D_C_W {
+    display: block;
+  }
   .itemDetail .item .productDetail .I_D_C_W form {
+    text-align: right;
+    margin: 30px 30px 30px 0px;
     width: auto;
   }
   .itemDetail .item .productDetail .I_D_C_W form .value-button {
     width: 15px;
     height: 15px;
+  }
+  .itemDetail .item .productDetail .I_D_C_W a {
+    position: relative;
+    font-size: 12px;
+    padding: 10px 30px;
+  }
+  .itemDetail .item .productDetail .I_D_C_W a svg {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 12px;
+  }
+  .itemDetail .item .productDetail .socialBtn button {
+    padding: 10px 20px;
+    font-size: 10px;
+  }
+  .itemDetail .item .productDetail .socialBtn button svg {
+    display: none;
   }
   .itemDetail .itemBestSeller {
     width: auto;
