@@ -1,27 +1,63 @@
     .topHeader {
         width: 100%;
-
         .topHeaderInner {
+            align-content: center;
             margin: auto;
             width: 60%;
+            height: 80px;
             display: grid;
             grid-template-columns: auto auto;
+            .topHeaderLeft{
+                width: 30%;
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .topHeaderRight{
+                display: grid;
+                grid-template-columns: auto auto auto;
+                justify-content: end;
+                .myPro{
+                    display: flex;
+                    align-items: center;
+                    font-family: $nova-semibold;
+                    svg{
+                        height: 15px;
+                        margin-right: 10px;
+                    }
+                    h5{
+                        
+                        margin: 0px 20px 0px 0px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                        }
+                    }
 
-        }
-
-        .skiptranslate {
-            img {
-                display: none;
+                }
+                .trash{
+                    display: flex;
+                    align-items: center;
+                    font-family: $nova-semibold;
+                    svg{
+                        height: 15px;
+                        margin: 0px 10px 0px 20px;
+                    }
+                    h6{
+                        margin-left: 5px;
+                        align-items: baseline;
+                        color: red;
+                    }
+                }
+                .search{
+                    svg{
+                        height: 15px;
+                        margin: 0px 10px 0px 20px;
+                    }
+                }
             }
         }
 
-        .white-space:nowrap {
-            display: none;
-        }
-
-        p {
-            display: none;
-        }
+       
     }
 
     .header {

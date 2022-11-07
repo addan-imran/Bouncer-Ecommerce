@@ -3,19 +3,56 @@
   width: 100%;
 }
 .topHeader .topHeaderInner {
+  align-content: center;
   margin: auto;
   width: 60%;
+  height: 80px;
   display: grid;
   grid-template-columns: auto auto;
 }
-.topHeader .skiptranslate img {
-  display: none;
+.topHeader .topHeaderInner .topHeaderLeft {
+  width: 30%;
+  display: grid;
+  grid-template-columns: auto auto;
 }
-.topHeader .white-space:nowrap {
-  display: none;
+.topHeader .topHeaderInner .topHeaderRight {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: end;
 }
-.topHeader p {
-  display: none;
+.topHeader .topHeaderInner .topHeaderRight .myPro {
+  display: flex;
+  align-items: center;
+  font-family: "proxima_nova_ltsemibold";
+}
+.topHeader .topHeaderInner .topHeaderRight .myPro svg {
+  height: 15px;
+  margin-right: 10px;
+}
+.topHeader .topHeaderInner .topHeaderRight .myPro h5 {
+  margin: 0px 20px 0px 0px;
+}
+.topHeader .topHeaderInner .topHeaderRight .myPro h5 a {
+  text-decoration: none;
+  color: black;
+}
+.topHeader .topHeaderInner .topHeaderRight .trash {
+  display: flex;
+  align-items: center;
+  font-family: "proxima_nova_ltsemibold";
+}
+.topHeader .topHeaderInner .topHeaderRight .trash svg {
+  height: 15px;
+  margin: 0px 10px 0px 20px;
+}
+.topHeader .topHeaderInner .topHeaderRight .trash h6 {
+  margin-left: 5px;
+  align-items: baseline;
+  color: red;
+}
+.topHeader .topHeaderInner .topHeaderRight .search svg {
+  height: 15px;
+  margin: 0px 10px 0px 20px;
 }
 
 .header {
@@ -649,6 +686,7 @@
 }
 .loadMore .loadMoreInner .loadLeft .loadAcc ul {
   list-style: none;
+  font-size: 14px;
 }
 .loadMore .loadMoreInner .loadLeft .loadAcc ul li a {
   text-decoration: none;
